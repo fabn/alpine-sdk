@@ -10,3 +10,5 @@ Run it with
     # Or to iterate steps
     abuild deps # Download and install dependencies
     abuild build # Repeat as needed
+
+References: http://wiki.alpinelinux.org/wiki/Creating_an_Alpine_package
