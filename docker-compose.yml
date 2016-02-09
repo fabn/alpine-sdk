@@ -1,0 +1,6 @@
+sdk:
+  build: .
+  stdin_open: true
+  tty: true
+  volumes:
+    - ./google-authenticator:/home/fabn/google-authenticator

@@ -17,7 +17,10 @@ RUN echo -e "\n# Developer user\nfabn ALL=(ALL) ALL" >> /etc/sudoers
 RUN addgroup fabn abuild
 RUN echo 'PACKAGER="Fabio Napoleoni <f.napoleoni@gmail.com>"' >> /etc/abuild.conf
 
-WORKDIR /home/fabn
+WORKDIR /home/fabn/google-authenticator
 USER fabn
+
+# Create a private key used to sign packages
+RUN abuild-keygen -an
 
 CMD bash
