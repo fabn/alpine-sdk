@@ -4,3 +4,10 @@ sdk:
   tty: true
   volumes:
     - ./google-authenticator:/home/fabn/google-authenticator
+pamtester:
+  build: .
+  stdin_open: true
+  tty: true
+  working_dir: /home/fabn/pamtester
+  volumes:
+    - ./pamtester:/home/fabn/pamtester
